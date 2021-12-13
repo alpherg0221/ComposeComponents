@@ -13,7 +13,7 @@ group = "com.github.alpherg0221"
 
 android {
     compileSdk = 31
-    buildToolsVersion = "31.0.0 rc2"
+    buildToolsVersion = "31.0.0"
 
     defaultConfig {
         minSdk = 28
