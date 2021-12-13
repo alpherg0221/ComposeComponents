@@ -1,4 +1,4 @@
-package jp.gr.java_conf.alpherg0221.compose.theme
+package jp.gr.java_conf.alpherg0221.compose.material.theme
 
 import androidx.compose.ui.graphics.Color
 

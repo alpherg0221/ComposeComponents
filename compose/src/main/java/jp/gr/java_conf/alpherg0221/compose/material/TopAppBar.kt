@@ -1,4 +1,4 @@
-package jp.gr.java_conf.alpherg0221.compose.components
+package jp.gr.java_conf.alpherg0221.compose.material
 
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.material.*
