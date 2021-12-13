@@ -8,4 +8,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "ComposeComponents"
-include(":components")
+include(":compose")
