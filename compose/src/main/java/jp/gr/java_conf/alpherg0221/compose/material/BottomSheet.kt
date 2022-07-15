@@ -9,7 +9,6 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.google.accompanist.insets.navigationBarsPadding
 
 @Composable
 fun BottomSheetLayout(

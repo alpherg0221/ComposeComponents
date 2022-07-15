@@ -1,14 +1,14 @@
 package jp.gr.java_conf.alpherg0221.compose.material
 
 import androidx.compose.foundation.layout.RowScope
+import androidx.compose.foundation.layout.navigationBarsPadding
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.google.accompanist.insets.navigationBarsPadding
-import com.google.accompanist.insets.statusBarsPadding
 
 @Composable
 fun InsetAwareTopAppBar(
@@ -42,7 +42,7 @@ fun InsetAwareTopAppBar(
             elevation = 0.dp,
             modifier = modifier
                 .statusBarsPadding()
-                .navigationBarsPadding(bottom = false),
+                .navigationBarsPadding(),
         )
     }
 }

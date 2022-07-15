@@ -1,7 +1,6 @@
 package jp.gr.java_conf.alpherg0221.compose.material
 
 import androidx.compose.animation.animateColorAsState
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
@@ -14,7 +13,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 
@@ -40,7 +38,6 @@ fun NavRailButton(
         color = backgroundColor,
         onClick = action,
         shape = CircleShape,
-        role = Role.Tab,
         modifier = modifier.size(48.dp)
     ) {
         NavigationIcon(
@@ -105,7 +102,6 @@ fun DrawerButton(
     }
 }
 
-@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun NavigationIcon(
     modifier: Modifier = Modifier,

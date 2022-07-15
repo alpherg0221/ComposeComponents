@@ -59,10 +59,10 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion")
 
-    implementation("androidx.core:core-ktx:1.7.0")
-    implementation("androidx.activity:activity-ktx:1.4.0")
-    implementation("androidx.appcompat:appcompat:1.4.0")
-    implementation("com.google.android.material:material:1.4.0")
+    implementation("androidx.core:core-ktx:1.8.0")
+    implementation("androidx.activity:activity-ktx:1.5.0")
+    implementation("androidx.appcompat:appcompat:1.4.2")
+    implementation("com.google.android.material:material:1.6.1")
 
     // compose
     implementation("androidx.compose.ui:ui:$composeVersion")
@@ -72,7 +72,7 @@ dependencies {
     implementation("androidx.compose.material:material:$composeVersion")
     implementation("androidx.compose.material:material-icons-core:$composeVersion")
     implementation("androidx.compose.material:material-icons-extended:$composeVersion")
-    implementation("androidx.activity:activity-compose:1.4.0")
+    implementation("androidx.activity:activity-compose:1.5.0")
 
     // accompanist
     implementation("com.google.accompanist:accompanist-coil:0.15.0")
