@@ -12,12 +12,12 @@ plugins {
 group = "com.github.alpherg0221"
 
 android {
-    compileSdk = 31
+    compileSdk = 32
     buildToolsVersion = "31.0.0"
 
     defaultConfig {
         minSdk = 28
-        targetSdk = 31
+        targetSdk = 32
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -67,16 +67,17 @@ dependencies {
     // compose
     implementation("androidx.compose.ui:ui:$composeVersion")
     implementation("androidx.compose.ui:ui-tooling:$composeVersion")
+    implementation("androidx.compose.ui:ui-text-google-fonts:1.3.0-alpha01")
     implementation("androidx.compose.ui:ui-util:$composeVersion")
     implementation("androidx.compose.foundation:foundation:$composeVersion")
     implementation("androidx.compose.material:material:$composeVersion")
     implementation("androidx.compose.material:material-icons-core:$composeVersion")
     implementation("androidx.compose.material:material-icons-extended:$composeVersion")
+    implementation("androidx.compose.material3:material3:1.0.0-alpha14")
     implementation("androidx.activity:activity-compose:1.5.0")
 
     // accompanist
     implementation("com.google.accompanist:accompanist-coil:0.15.0")
-    implementation("com.google.accompanist:accompanist-insets:$accompanistVersion")
     implementation("com.google.accompanist:accompanist-systemuicontroller:$accompanistVersion")
 
     // test
