@@ -2,8 +2,8 @@ buildscript {
     // Library version
     val kotlinVersion by extra("1.7.0")
     val coroutinesVersion by extra("1.6.4")
-    val composeVersion by extra("1.3.0-alpha01")
-    val accompanistVersion by extra("0.24.13-rc")
+    val composeVersion by extra("1.3.0-alpha02")
+    val accompanistVersion by extra("0.26.0-alpha")
 
     repositories {
         google()
@@ -12,7 +12,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:7.2.1")
+        classpath("com.android.tools.build:gradle:7.2.2")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
     }
 }
