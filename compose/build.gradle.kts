@@ -85,7 +85,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.alpherg0221"
                 artifactId = "ComposeComponents"
-                version = "1.0.0-alpha10"
+                version = "1.0.0-beta01"
             }
         }
     }
