@@ -34,11 +34,6 @@ fun <T : AppDest> DrawerApp(
     // ドロワーの状態
     val drawerState = rememberDrawerState(DrawerValue.Closed)
 
-    // ドロワーが開いているときはバックボタンでドロワーを閉じる
-    BackHandler(enabled = drawerState.isOpen) {
-        scope.launch { drawerState.close() }
-    }
-
     // ナビゲーションドロワー
     ModalNavigationDrawer(
         drawerState = drawerState,
@@ -66,5 +61,10 @@ fun <T : AppDest> DrawerApp(
             startDestination = appDest.homeRoute.route,
             builder = builder,
         )
+    }
+
+    // ドロワーが開いているときはバックボタンでドロワーを閉じる
+    BackHandler(enabled = drawerState.isOpen) {
+        scope.launch { drawerState.close() }
     }
 }
