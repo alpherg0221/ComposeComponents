@@ -2,7 +2,6 @@ package jp.gr.java_conf.alpherg0221.compose.material3.component
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.navigationBarsPadding
-import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ModalNavigationDrawer
 import androidx.compose.material3.rememberDrawerState
@@ -48,13 +47,11 @@ fun <T : AppDest> DrawerApp(
                         action = { navController.navigate(item.route) },
                     )
                 },
-                closeDrawer = { scope.launch { drawerState.close() } }
+                closeDrawer = { scope.launch { drawerState.close() } },
             )
         },
         gesturesEnabled = currentRoute !in gesturesDisabledRoute,
-        modifier = Modifier
-            .statusBarsPadding()
-            .navigationBarsPadding(),
+        modifier = Modifier.navigationBarsPadding(),
     ) {
         NavHost(
             navController = navController,

@@ -3,6 +3,7 @@ package jp.gr.java_conf.alpherg0221.compose.material3.component
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.QuestionMark
 import androidx.compose.material3.Icon
@@ -28,7 +29,7 @@ fun Drawer(
     drawerItems: List<DrawerItem>,
     closeDrawer: () -> Unit = {},
 ) {
-    ModalDrawerSheet {
+    ModalDrawerSheet(modifier = Modifier.statusBarsPadding()) {
         Spacer(Modifier.height(12.dp))
         drawerItems.forEach { item ->
             NavigationDrawerItem(
